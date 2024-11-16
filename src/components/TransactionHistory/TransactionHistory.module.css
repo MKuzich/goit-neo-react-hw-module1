@@ -1,0 +1,30 @@
+.cell {
+  min-width: 250px;
+  border: 1px solid #2c2c2c;
+  padding: 4px;
+}
+
+.headcell {
+  composes: cell;
+  background-color: #363636;
+  color: #fff;
+}
+
+.rowcell {
+  composes: cell;
+}
+
+.rowcell:first-child {
+  text-transform: capitalize;
+  padding-left: 10%;
+  text-align: left;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.row:nth-of-type(even) {
+  background-color: #c4c4c4;
+}
